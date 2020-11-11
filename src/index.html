@@ -1,13 +1,47 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>MyProject</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<!DOCTYPE html> 
+<html>
+<head> 
+<meta charset="UTF-8"> 
+<title>Выбор тарифа</title> 
+<link rel="stylesheet" type="text/css" href="styles.css"> 
+<script src="script.js"></script> 
 </head>
-<body>
-  <app-root></app-root>
+<body> 
+  
+
+      <h1>Выбор тарифа сотовой связи</h1>
+      <p>Сколько гигабайт интернета в месяц вам нужно?</p>
+      <select>
+        <option>0-10</option>
+        <option>11-20</option>
+        <option>21-30</option>
+        <option>31-50</option>
+        <option>51-100</option>
+        <option>>100</option>
+      </select>
+      <p>Сколько минут в месяц вам нужно?</p>
+      <select>
+        <option>0-100</option>
+        <option>101-200</option>
+        <option>201-400</option>
+        <option>401-600</option>
+        <option>601-800</option>
+        <option>>800</option>
+      </select>
+      <p>Сколько SMS в месяц вам нужно?</p>
+      <select>
+        <option>0</option>
+        <option>50</option>
+        <option>100</option>
+        <option>400</option>
+        <option>500</option>
+        <option>700</option>
+        <option>>700</option>
+      </select>
+      <p>Вот наиболее выгодный для вас тариф: <br> {{ result }}</p>
+    
+  
+  
+  
 </body>
 </html>
